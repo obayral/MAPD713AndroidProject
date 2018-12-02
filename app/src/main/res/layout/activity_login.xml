@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TableLayout declaration-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".Login"
+    android:background="@android:color/holo_blue_light">
+
+    <!--Welcome Message -->
+
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_marginTop="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Welcome to Patients App"
+        android:textSize="20dp"/>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+        <TextView
+            android:id="@+id/r1textView"
+            android:text="User Name:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px"/>
+
+        <EditText
+            android:id="@+id/r1editText"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:layout_marginLeft="-60px"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/r2textView"
+            android:text="Password:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px"/>
+
+        <EditText
+            android:id="@+id/r2editText"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text=""
+            android:layout_marginLeft="-60px">
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/button1"
+            android:text="Log In"
+            android:onClick="logIn"
+            />
+    </TableRow>
+
+<TextView
+        android:id="@+id/signUp"
+        android:layout_marginTop="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Dont have an account? Sign Up"
+        android:textSize="20dp"/>
+
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/button2"
+            android:text="Sign Up"
+            android:onClick="signUp"
+        />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/userEnteredPassword"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text=""
+            android:layout_marginLeft="-60px"
+            android:visibility="invisible">
+
+        </EditText>
+
+    </TableRow>
+
+</TableLayout>
