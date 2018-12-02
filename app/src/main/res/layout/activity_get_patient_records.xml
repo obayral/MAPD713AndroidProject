@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetSinglePatient"
+    tools:context=".GetPatientRecords"
     android:background="#ffb3b3">
 
     <TextView
@@ -14,7 +14,7 @@
         android:paddingTop="20dp"
         android:gravity="center"
         android:layout_marginTop="0dp"
-        android:text="PATIENT INFORMATION"
+        android:text="PATIENT RECORDS"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -35,30 +35,17 @@
             <TextView
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
-                android:layout_height="200dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="XXX"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                 />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
     </ScrollView>
-
-
-
-    <Button
-        android:gravity="center_horizontal"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="350dp"
-        android:id="@+id/addPatient"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get Patient Record"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:onClick="getPatientRecord"
-        />
-
 
 </RelativeLayout>

@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".AddPatient" />
         <activity android:name=".GetPatients" />
-        <activity android:name=".GetSinglePatient"></activity>
+        <activity android:name=".GetSinglePatient" />
+        <activity android:name=".GetPatientRecords"></activity>
     </application>
 
 </manifest>

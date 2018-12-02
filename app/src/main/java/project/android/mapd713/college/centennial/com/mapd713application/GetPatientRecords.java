@@ -23,7 +23,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class GetSinglePatient extends AppCompatActivity {
+public class GetPatientRecords extends AppCompatActivity {
 
 
     public static TextView mTextViewResult;
@@ -33,22 +33,12 @@ public class GetSinglePatient extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_get_single_patient);
+        setContentView(R.layout.activity_get_patient_records);
         //  text = (TextView)findViewById(R.id.text);
         mTextViewResult = (TextView) findViewById(R.id.text);
         mQueue = Volley.newRequestQueue(this);
-        fetchSinglePatientData process =  new fetchSinglePatientData(GetSinglePatient.this);
+        FetchPatientRecords process =  new FetchPatientRecords(GetPatientRecords.this);
         process.execute();
     }
-
-
-    public void getPatientRecord(View v)
-    {
-        //instantiate intent class
-        Intent intent=new Intent(GetSinglePatient.this, GetPatientRecords.class);
-        //start the activity
-        startActivity(intent);
-    }
-
 
 }
