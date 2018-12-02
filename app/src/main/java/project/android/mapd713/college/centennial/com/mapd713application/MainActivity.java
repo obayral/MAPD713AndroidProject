@@ -5,6 +5,7 @@ package project.android.mapd713.college.centennial.com.mapd713application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -61,12 +62,13 @@ public class MainActivity extends AppCompatActivity {
     public void getSinglePatient(View v)
     {
         etID = findViewById(R.id.editTextID);
-        SharedPreferences sharedPref = getSharedPreferences("patientId", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPref.edit();
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = prefs.edit();
         editor.putString("patientId",etID.getText().toString());
         editor.apply();
 
-        String xx = sharedPref.getString("patientId","hayamk");
+        String xx = prefs.getString("patientId","hayamk");
         Log.d("XX","DEGER" + xx);
 
         //instantiate intent class

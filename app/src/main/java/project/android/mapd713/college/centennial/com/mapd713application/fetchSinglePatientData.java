@@ -47,7 +47,7 @@ public class fetchSinglePatientData extends AsyncTask<Void,Void,Void> {
         Log.i("fonksiyon","ICINE GIRDI");
 
         try {
-            URL url = new URL("https://mapd713prjct.herokuapp.com/patients/5bf63c770fc33ea59c9c3a97");
+            URL url = new URL("https://mapd713prjct.herokuapp.com/patients/" + xx);
             Log.i("URL","URL ICINE GIRDI");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
 
