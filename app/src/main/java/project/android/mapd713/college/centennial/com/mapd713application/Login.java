@@ -57,7 +57,7 @@ public class Login extends AppCompatActivity {
     public void signUp(View v)
     {
         //instantiate intent class
-        Intent intent=new Intent(Login.this, AddPatient.class);
+        Intent intent=new Intent(Login.this, SignUp.class);
 
         //start the activity
         startActivity(intent);

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TableLayout declaration-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:layout_marginVertical="20px"
+    android:layout_marginRight="20px"
+    tools:context=".SignUp">
+
+    <!--Welcome Message -->
+    <TextView
+        android:id="@+id/r0textView"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:layout_marginLeft="170px"/>
+
+    <!-- Row declarations within the TableLayout.-->
+
+    <!--Namings were done by row-wise.
+       Such as, r1textView means, TextView element in the first row, r1editText means
+       EditText element in the first rows. This naming convention applies for following
+       rows either.-->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/r1textView"
+            android:text="First Name:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px" />
+
+        <EditText
+            android:id="@+id/r1editText"
+            android:ems="10"
+            android:text=""
+            android:layout_marginLeft="50px"
+            android:inputType="number"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/r2textView"
+            android:text="Last Name:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px" />
+        <EditText
+            android:id="@+id/r2editText"
+            android:ems="10"
+            android:inputType="text"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:text=""
+            android:layout_marginLeft="50px" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/r3textView"
+            android:text="Mail Address:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px" />
+        <EditText
+            android:id="@+id/r3editText"
+            android:ems="10"
+            android:inputType="text"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:text=""
+            android:layout_marginLeft="50px" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/r4textView"
+            android:text="Phone:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px" />
+        <EditText
+            android:id="@+id/r4editText"
+            android:ems="10"
+            android:text=""
+            android:layout_marginLeft="50px" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/r5textView"
+            android:text="Department:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px" />
+
+        <EditText
+            android:id="@+id/r5editText"
+            android:layout_marginLeft="50px"
+            android:ems="10"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/r6textView"
+            android:text="Position:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px" />
+
+        <EditText
+            android:id="@+id/r6editText"
+            android:layout_marginLeft="50px"
+            android:ems="10"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/r7textView"
+            android:text="User Name:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px" />
+
+        <EditText
+            android:id="@+id/r7editText"
+            android:layout_marginLeft="50px"
+            android:ems="10"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/r8textView"
+            android:text="Password:"
+            android:textSize="20dp"
+            android:layout_marginLeft="70px" />
+
+        <EditText
+            android:id="@+id/r8editText"
+            android:layout_marginLeft="50px"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow
+        android:gravity="center_horizontal"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button1"
+            android:text="Submit"
+            android:onClick="submit" />
+    </TableRow>
+
+
+</TableLayout>
