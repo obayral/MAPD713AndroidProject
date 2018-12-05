@@ -2,6 +2,7 @@ package project.android.mapd713.college.centennial.com.mapd713application;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -61,5 +62,11 @@ public class Login extends AppCompatActivity {
 
         //start the activity
         startActivity(intent);
+    }
+
+    public void forgotPassword(View v){
+        SendMail mailProcess =  new SendMail(Login.this);
+        mailProcess.execute();
+        Toast.makeText(getApplicationContext(),"Recovery Email sent successfully!", Toast.LENGTH_LONG).show();
     }
 }
